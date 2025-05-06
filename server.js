@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 const PORT = 3000;
 const shortcode = '857767'; // Your Paybill
 const passkey = process.env.PASSKEY;
-const callbackURL = 'https://your-ngrok-url.ngrok.io/callback'; // Update when using ngrok
+const callbackURL = 'https://webkingke.github.io/mpesa-getway/callback'; // Update when using ngrok
 
 const consumerKey = process.env.CONSUMER_KEY;
 const consumerSecret = process.env.CONSUMER_SECRET;
@@ -62,4 +62,4 @@ app.post('/api/stkpush', async (req, res) => {
   }
 });
 
-app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
+app.listen(PORT, () => console.log(`Server running on https://webkingke.github.io/mpesa-getway/:${PORT}`));
