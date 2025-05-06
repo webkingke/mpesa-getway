@@ -34,7 +34,7 @@
       response.textContent = 'Sending payment request...';
 
       try {
-        const res = await fetch('http://localhost:3000/api/stkpush', {
+        const res = await fetch('https://webkingke.github.io/mpesa-getway/api/stkpush', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ phone, amount })
